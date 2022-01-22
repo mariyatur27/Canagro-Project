@@ -585,6 +585,9 @@ input#search_bar {
   #hero {
     height: auto;
   }
+  img.cran_img {
+    display: none;
+}
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -666,7 +669,9 @@ section {
   font-family: "Poppins", sans-serif;
   color: #151515;
 }
-
+img.cran_img {
+  width: 20%;
+}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
