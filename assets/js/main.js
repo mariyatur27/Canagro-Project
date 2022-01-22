@@ -317,6 +317,7 @@ document.getElementById('purre').addEventListener("click", function() {
 });
 document.getElementById('juices').addEventListener("click", function() {
   var box_p1 = document.getElementsByClassName("product-box");
+  var text = document.getElementsByClassName('product-dscrp3');
   var name_list = ["Cranberry Juice Concentrate", "Apple Juice Concentrate", "Maple Syrup"];
   var name = document.getElementsByClassName('product_name');
   for (i = 0; i < name.length; i++) {

@@ -619,6 +619,12 @@ input#search_bar {
   .counts .content {
     padding: 30px 15px;
   }
+  .invisble{
+    display: none;
+  }
+  .head{
+    margin-top: 17%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -648,7 +654,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #ffde9e;
+  background: #C61D39;
   margin: 4px 10px;
 }
 .section-title p {
