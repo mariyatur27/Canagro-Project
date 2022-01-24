@@ -146,14 +146,16 @@ p.product-dscrp {
   padding-top: 2%;
   padding-bottom: 2%;
   padding-left: 1%;
+  font-size: 15px;
   padding-right: 1%;
   opacity: 0;
   transition-duration: 1s;
 }
 p.product-dscrp2 {
   position: absolute;
-  top: 53%;
+  top: 52%;
   width: 29%;
+  font-size: 14px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -167,7 +169,8 @@ p.product-dscrp2 {
 }
 p.product-dscrp3 {
   position: absolute;
-  top: 80%;
+  font-size: 15px;
+  top: 78%;
   width: 29%;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
