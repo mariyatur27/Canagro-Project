@@ -76,7 +76,9 @@ html {
   background-position-x: 64%;
 }
 #syrup {
-  background-size: 113%;
+  background-size: 116%;
+  background-position-y: 41%;
+  background-position-x: 61%;
 }
 #cul_blueb {
   background-size: 160%;
@@ -818,7 +820,8 @@ img.cran_img {
   background-position-y: 54%;
 }
 #ic_2 {
-  background-size: 101%;
+  background-size: 100%;
+  background-position: 0px 243px;
 }
 #ic_3 {
   background-size: 100%;
@@ -851,9 +854,19 @@ a.cta-btn2:hover {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1627920769541-daa658ed6b59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("https://thumbs.dreamstime.com/z/cranberry-harvesting-cranberries-floating-field-ready-47574825.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
+}
+#sp_st1{
+  background-size: 108%;
+  background-position-y: 53%;
+  background-position-x: -9%;
+}
+#sp_st2{
+  background-size: 98%;
+  background-position-y: 55%;
+  background-position-x: 43%;
 }
 .cta h3 {
   color: #fff;

@@ -336,3 +336,16 @@ document.getElementById('all').addEventListener("click", function() {
   }
 
 });
+
+// Creating interactive pie charts
+anychart.onDocumentReady(function() {
+  var data = [
+    {x: "Eastern Europe", value: 76},
+    {x: "Asia", value: 26}
+  ];
+  var chart = anychart.pie();
+  // chart.title("Total Volume of Goods Sold Between 2017-2021");
+  chart.data(data);
+  chart.container('container');
+  chart.draw();
+})

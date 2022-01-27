@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/icon.jpg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -24,6 +24,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+  <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -42,7 +44,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-lg-between">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Canagro Foods<span></span></a></h1>
+      <h1 class="logo me-auto me-lg-0"><a href="index.html"><img src="assets/img/logo.png" class="logo"><span></span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -121,7 +123,7 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="https://images.unsplash.com/photo-1613690399151-65ea69478674?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80" class="img-fluid" alt="">
+            <img src="https://thumbs.dreamstime.com/z/happy-canada-day-concept-canadian-flag-made-out-real-dead-maple-leaves-colored-red-white-background-happy-canada-185802354.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
             <h3>Canagro Foods is a Canadian exporter and merchandiser. </h3>
@@ -223,7 +225,7 @@
           </div>
 
           <div class="col-lg-4 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box" style="background-image: url(https://www.frozenfoodeurope.com/wp-content/uploads/2017/04/vegetables-678x381.jpg?x98367)" id="ic_2">
+            <div class="icon-box" style="background-image: url(https://thumbs.dreamstime.com/z/cranberry-prossing-machine-which-consists-conveyor-belt-cranberries-29802558.jpg)" id="ic_2">
               <h4><a href="">Step 2. Processing</a></h4>
             </div>
           </div>
@@ -343,6 +345,7 @@
             </div><!-- End .content-->
           </div>
         </div>
+        <div id="container"></div>
 
       </div>
     </section><!-- End Counts Section -->
@@ -424,19 +427,19 @@
             <p class="product-dscrp2" onmouseover="hoverFunc(this)" onmouseout="hoverOff(this)">Whole & juicy dried blueberries harvested in a plant. Made with real whole fruit, they have no artificial flavors or preservatives no-GMO, gluten-free. Gently dried for a fresher taste. Great for snacks, salads, and baking.</p>
           </div>
 
-          <div class="product-box" style="background-image: url(https://www.clipartkey.com/mpngs/m/162-1624477_clip-art-cranberry-pictures-cranberry-transparent-background.png)">
+          <div class="product-box" id="sp_st1" style="background-image: url(https://thumbs.dreamstime.com/z/red-wild-berry-sauce-top-view-34124080.jpg)">
             <h3 class="product_name">Aseptic Unsweetened Cranberry Puree</h3>
             <p class="product-dscrp2" onmouseover="hoverFunc(this)" onmouseout="hoverOff(this)">Our cranberry puree is made from whole cranberries, prepared using cutting-edge equipment to preserve all the goodness of the fruit. Prepared with non-GMO ingredients. No added sweeteners, preservatives, flavors, or colors. The puree is pasteurized and aseptically packaged to guarantee the product’s shelf life and minimize transport and warehousing costs.</p>
           </div>
         </div>
 
         <div class="together">
-          <div class="product-box" style="background-image: url(https://www.clipartkey.com/mpngs/m/162-1624477_clip-art-cranberry-pictures-cranberry-transparent-background.png)">
+          <div class="product-box" id="sp_st1" style="background-image: url(https://thumbs.dreamstime.com/z/glass-cranberry-juice-close-up-photo-plain-33442154.jpg)">
             <h3 class="product_name">Cranberry Juice Concentrates</h3>
             <p class="product-dscrp3" onmouseover="hoverFunc(this)" onmouseout="hoverOff(this)">Our cranberry juice concentrate is made from whole cranberries, processed using cutting-edge equipment to preserve all the goodness of the fruit. Prepared with non-GMO berries. No added sweeteners, preservatives, flavors, or colors. Available on demand in aseptic packaging to minimize transport and warehousing costs.</p>
           </div>
 
-          <div class="product-box" style="background-image: url(https://www.clipartkey.com/mpngs/m/162-1624477_clip-art-cranberry-pictures-cranberry-transparent-background.png)">
+          <div class="product-box" id="sp_st2" style="background-image: url(https://thumbs.dreamstime.com/z/apple-juice-17650107.jpg)">
             <h3 class="product_name">Apple Juice Concentrates</h3>
             <p class="product-dscrp3" onmouseover="hoverFunc(this)" onmouseout="hoverOff(this)">Our apple juice concentrate is made from whole apples, processed using cutting-edge equipment to preserve all the goodness of the fruit. Prepared with non-GMO berries. No added sweeteners, preservatives, flavors, or colors. Available on demand in aseptic packaging to minimize transport and warehousing costs.</p>
           </div>
