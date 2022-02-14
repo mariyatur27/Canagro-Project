@@ -825,12 +825,14 @@ img.cran_img {
   background-position-y: 54%;
 }
 #ic_2 {
-  background-size: 100%;
+  background-size: 130%;
   background-position: 0px 243px;
+  padding: 124px 20px;
+  background-position-y: -2px;
 }
 #ic_3 {
   background-size: 100%;
-  background-position-y: -47px;
+  background-position-y: -248px;
   background-position-x: 16px;
 }
 #ic_4 {
@@ -856,7 +858,14 @@ a.cta-btn2:hover {
   background-color: #C61D39;
   color: white;
 }
-
+@media(max-width: 1400px) {
+  #sp_st3{
+    background-position-y: 180%;
+  }
+  .product-box {
+    background-position-y: 3%;
+  }
+}
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
