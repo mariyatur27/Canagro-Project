@@ -76,9 +76,14 @@ html {
   background-position-x: 64%;
 }
 #syrup {
-  background-size: 116%;
-  background-position-y: 41%;
+  background-size: 101%;
+  background-position-y: 71%;
   background-position-x: 61%;
+}
+#sp_st3{
+  background-size: 108%;
+  background-position-y: -11%;
+  background-position-x: 54%;
 }
 #cul_blueb {
   background-size: 160%;
@@ -139,7 +144,7 @@ h3.product_name {
 }
 p.product-dscrp {
   position: absolute;
-  top: 27%;
+  top: 25.5%;
   width: 29%;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
@@ -172,7 +177,7 @@ p.product-dscrp2 {
 p.product-dscrp3 {
   position: absolute;
   font-size: 15px;
-  top: 78%;
+  top: 78.5%;
   width: 29%;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
@@ -825,6 +830,8 @@ img.cran_img {
 }
 #ic_3 {
   background-size: 100%;
+  background-position-y: -47px;
+  background-position-x: 16px;
 }
 #ic_4 {
   background-size: 100%;
@@ -860,7 +867,7 @@ a.cta-btn2:hover {
 }
 #sp_st1{
   background-size: 108%;
-  background-position-y: 53%;
+  background-position-y: 110%;
   background-position-x: -9%;
 }
 #sp_st2{

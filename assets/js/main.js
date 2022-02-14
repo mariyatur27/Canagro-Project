@@ -292,16 +292,31 @@ function adjustShadow1() {
 document.getElementById('berries').addEventListener("click", function() {
   var box_p1 = document.getElementsByClassName("product-box");
   var box_text = document.getElementsByClassName("product-dscrp");
-  var name_list = ["Whole Dried Cranberries", "Standard Cut Dried Cranberries", "Chucks of Dried Cranberries", "Wild Whole Dried Blueberries", "Cultivated Whole Dried Blueberries"];
+  var box_text2 = document.getElementsByClassName("product-dscrp2");
+  var name_list = ["Whole Dried Cranberries", "Standard Cut Dried Cranberries", "Chuncks of Dried Cranberries", "Wild Dried Blueberries", "Cultivated Dried Blueberries"];
   var name = document.getElementsByClassName('product_name');
   for (i = 0; i < name.length; i++) {
     if (name_list.includes(name[i].innerHTML)) {
       box_p1[i].style.display = 'block';
+      if (name[i].innerHTML.includes('Whole Dried Cranberries') || name[i].innerHTML.includes('Standard Cut Dried Cranberries') || name[i].innerHTML.includes('Chuncks of Dried Cranberries')) {
+        box_text[i].style.top = '37%';
+      }else if (name[i].innerHTML.includes('Wild Dried Blueberries') || name[i].innerHTML.includes('Cultivated Dried Blueberries')) {
+        box_text2[i].style.top = '72%';
+        console.log('asdasddasd')
+      }
     }else{
       box_p1[i].style.display = 'none';
     }
   }
 });
+
+// var box_text = document.getElementsByClassName("product-dscrp");
+// for (var i = 0; i < box_text.length; i++) {
+//   if (box_text[i].style.opacity = '1') {
+//     box_text[i].style.top = '37%';
+//     box_text[i].style.marginLeft = '1.1%';
+//   }
+// }
 
 document.getElementById('purre').addEventListener("click", function() {
   var box_p1 = document.getElementsByClassName("product-box");
@@ -317,12 +332,16 @@ document.getElementById('purre').addEventListener("click", function() {
 });
 document.getElementById('juices').addEventListener("click", function() {
   var box_p1 = document.getElementsByClassName("product-box");
-  var text = document.getElementsByClassName('product-dscrp3');
-  var name_list = ["Cranberry Juice Concentrate", "Apple Juice Concentrate", "Maple Syrup"];
+  var text1 = document.getElementsByClassName('product-dscrp3');
+  var name_list = ["Cranberry Juice Concentrates", "Apple Juice Concentrates", "Maple Syrup"];
   var name = document.getElementsByClassName('product_name');
   for (i = 0; i < name.length; i++) {
     if (name_list.includes(name[i].innerHTML)) {
       box_p1[i].style.display = 'block';
+      console.log('test1')
+      text1[i].style.top = '54.5%';
+      console.log('test2')
+      text1[i].style.marginLeft = '1%';
     }else{
       box_p1[i].style.display = 'none';
     }
@@ -336,6 +355,8 @@ document.getElementById('all').addEventListener("click", function() {
   }
 
 });
+
+
 
 // // Creating interactive pie charts
 // anychart.onDocumentReady(function() {
