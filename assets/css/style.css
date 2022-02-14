@@ -858,6 +858,14 @@ a.cta-btn2:hover {
   background-color: #C61D39;
   color: white;
 }
+#house-img {
+  max-width: 86%;
+}
+.member-info:hover{
+  background-color: #C61D39;
+  color: white;
+}
+
 @media(max-width: 1400px) {
   #sp_st3{
     background-position-y: 180%;
@@ -1283,24 +1291,28 @@ a.cta-btn2:hover {
 }
 .team .member .member-info {
   padding: 25px 15px;
+  transition-duration: 1s;
 }
 .team .member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
   color: #151515;
+  transition-duration: 1s;
 }
 .team .member .member-info span {
   display: block;
   font-size: 13px;
   font-weight: 400;
   color: #aaaaaa;
+  transition-duration: 1s;
 }
 .team .member .member-info p {
   font-style: italic;
   font-size: 14px;
   line-height: 26px;
   color: #777777;
+  transition-duration: 1s;
 }
 .team .member:hover .social {
   opacity: 1;
