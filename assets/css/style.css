@@ -293,7 +293,7 @@ input#search_bar {
   color: #C61D39;
 }
 #header .logo img {
-  max-height: 40px;
+  max-height: 62px;
 }
 .head{
   border-color: #C61D39;
@@ -590,14 +590,20 @@ input#search_bar {
   #hero {
     background-attachment: fixed;
   }
+  .extra_space {
+    margin-left:21.5%;
+  }
 }
 @media (max-width: 768px) {
   #hero {
     height: auto;
   }
+  .extra_space {
+    margin-left: 12.5%;
+  }
   img.cran_img {
     display: none;
-}
+  }
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -1237,6 +1243,40 @@ a.cta-btn2:hover {
 @media (min-width: 992px) {
   .testimonials .testimonial-item p {
     width: 80%;
+  }
+}
+@media (min-width: 1300px) {
+  .extra_space {
+    margin-left: 18.5%;
+  }
+}
+@media(min-width: 1500px){
+  .extra_space{
+    margin-left: 15.5%;
+  }
+}
+@media(min-width: 1400px){
+  #ic_1 {
+    padding: 88px 20px;
+  }
+}
+@media(max-width: 1400px){
+  #ic_1 {
+    padding: 114px 20px;
+    background-size: 118%;
+  }
+  #r1_1{
+    padding: 31px 21px;
+  }
+  #r2_1 {
+
+  }
+  #r2_2 {
+    background-size: 158%;
+    padding: 159px 20px;
+  }
+  #r2_3 {
+    
   }
 }
 
