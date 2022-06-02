@@ -357,16 +357,72 @@ document.getElementById('all').addEventListener("click", function() {
 });
 
 
+const data = {
+  "Whole Dried Cranberries":"Whole & juicy dried cranberries. Made with real whole fruit, they have no artificial flavors or preservatives, non-GMO, gluten-free. Gently dried for a fresher taste. Great for snacks, salads, and baking.",
 
-// // Creating interactive pie charts
-// anychart.onDocumentReady(function() {
-//   var data = [
-//     {x: "Eastern Europe", value: 76},
-//     {x: "Asia", value: 26}
-//   ];
-//   var chart = anychart.pie();
-//   // chart.title("Total Volume of Goods Sold Between 2017-2021");
-//   chart.data(data);
-//   chart.container('container');
-//   chart.draw();
-// })
+  "Standard Cut Dried Cranberries":"Standard cut dried cranberries are made with real fruit and cut in half. They have no artificial flavors or preservatives, non-GMO, or gluten-free. Gently dried for a fresher taste. Great for baking and further processing.",
+
+  "Chuncks of Dried Cranberries":"Chunks of dried cranberries are made with real fruit and cut into smaller pieces, bits. They have no artificial flavors or preservatives, non-GMO, or gluten-free. Gently dried for a fresher taste. Great for baking and further processing.",
+
+  "Wild Dried Blueberries":"Whole & juicy dried blueberries harvested in forests. Made with real whole fruit, they have no artificial flavors or preservatives non-GMO, gluten-free. Gently dried for a fresher taste. Great for snacks, salads, and baking.",
+
+  "Cultivated Dried Blueberries":"Whole & juicy dried blueberries harvested in a plant. Made with real whole fruit, they have no artificial flavors or preservatives no-GMO, gluten-free. Gently dried for a fresher taste. Great for snacks, salads, and baking.",
+
+  "Aseptic Unsweetened Cranberry Puree":"Our cranberry puree is made from whole cranberries, prepared using cutting-edge equipment to preserve all the goodness of the fruit. Prepared with non-GMO ingredients. No added sweeteners, preservatives, flavors, or colors. The puree is pasteurized and aseptically packaged to guarantee the product’s shelf life and minimize transport and warehousing costs.",
+
+  "Cranberry Juice Concentrates":"Our cranberry juice concentrate is made from whole cranberries, processed using cutting-edge equipment to preserve all the goodness of the fruit. Prepared with non-GMO berries. No added sweeteners, preservatives, flavors, or colors. Available on demand in aseptic packaging to minimize transport and warehousing costs.",
+
+  "Apple Juice Concentrates":"Our apple juice concentrate is made from whole apples, processed using cutting-edge equipment to preserve all the goodness of the fruit. Prepared with non-GMO apples. No added sweeteners, preservatives, flavors, or colors. Available on demand in aseptic packaging to minimize transport and warehousing costs.",
+
+  "Maple Syrup":"Our maple syrup is made from maple tree sap that's been boiled down to reduce the water content and concentrate the sugars. Those sugars caramelize, resulting in maple syrup's characteristic rich color and flavor. Take advantage of our large assortment of maple syrups to satisfy your most demanding customers."
+}
+
+
+const show_text = (id) => {
+  var title = document.getElementById(id).children[0].innerHTML;
+  var text = data[title];
+  let popup = document.createElement('div'); popup.classList.add('popup-window');
+  popup.id = id + "-popup";
+    let close = document.createElement('h1'); close.innerText = 'x'; close.classList.add('close-box'); 
+    close.id = id + '-close';
+    popup.appendChild(close);
+    let p_title = document.createElement('h2'); p_title.innerText = title;
+    popup.appendChild(p_title);
+    let p_text = document.createElement('p'); p_text.innerText = text;
+    popup.appendChild(p_text);
+    close.addEventListener('click', function() {
+      popup.classList.toggle('hide');
+    })
+  document.body.appendChild(popup);
+}
+
+
+const close_box = (b_id) => {
+  document.addEventListener('mouseup', function(e){
+    var container = document.getElementById(b_id);
+    if(!container.contains(e.target)){
+      container.style.display = 'none';
+    }
+  });
+}
+
+// const close_button = (c_id, b_id) => {
+//   var box = document.getElementById(b_id);
+//   document.getElementById(c_id).addEventListener('click', function(){
+//     console.log('test')
+//     if (box.style.display == 'block'){
+//       box.style.display == 'none'
+//     }else{
+//       box.style.display == 'block'
+//     }
+//   })
+// }
+
+var the_boxes = document.querySelectorAll('.product-box');
+for (var i = 0; i < the_boxes.length; i++) {
+  var b_id = the_boxes[i].id + "-popup"
+  var c_id = the_boxes[i].id + "-close"
+  console.log(c_id)
+  close_box(b_id);
+  // close_button(c_id, b_id);
+}
