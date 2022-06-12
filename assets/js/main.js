@@ -241,13 +241,9 @@
 
 document.getElementById('currency').addEventListener('click' , function() {
   document.getElementById("stocks_container").style.display = "block";
+  // document.getElementById("stocks_container").classList.toggle('show');
   document.getElementById("b_text").innerHTML = "Close";
 }); 
-
-document.getElementById('currency').addEventListener('mouseup' , function() {
-  document.getElementById("stocks_container").style.display = "none";
-  document.getElementById("b_text").innerHTML = "Check the currency";
-});
 
 document.addEventListener('mouseup', function(e) {
   var container = document.getElementById('stocks_container');

@@ -121,9 +121,9 @@ h3.product_name {
   top: 30%;
   z-index: 1;
 }
-#stocks_container:active {
+/* #stocks_container:active {
   display: none;
-}
+} */
 .stocks h6 {
   background-color: #C61D39;
   color: white;
@@ -178,6 +178,9 @@ h1.close-box {
 }
 .hide{
   display: none;
+}
+.show{
+  display: block;
 }
 span.extra_space-2 {
   margin-left: 3%;
