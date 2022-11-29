@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<title>WCI Web-Dev</title>
+	<link rel="icon" href="logo.png">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href="action_page.php">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+	<script>
+ 			 AOS.init();
+ 			 AOS.init({
+ 			 	duration: 1000,
+ 			 	offset: 120,
+ 			 	throttleDelay: 200,
+ 			 });
+		</script>
+	<!-- <div class="top">
+		<a href="index.html">
+		<button type="button" class="menu" id="home">Home</button>
+		</a>
+		<a href="#abt">
+		<button type="button" class="menu" id="about">About</button>
+		</a>
+		<a href="portfolio.html">
+		<button type="button" class="menu" id="portfolio">
+		Digital Portfolio</button>
+		</a>
+		<a href="#attendance-cntnr">
+		<button type="button" class="menu" id="atd">Attendance</button>
+		</a>
+		<a href = "#team-members-cntnr">
+		<button type="button" class="menu" id="team">Our Team</button>
+		</a>
+		<a href="news.html">
+		<button type="button" class="menu" id="news">News</button>
+		</a>
+	</div> -->
+	<div class="top">
+		<nav>
+			<a href="index.html" class="menu">Home</a>
+			<a href="#abt" class="menu">About</a>
+			<a href="portfolio.html" class="menu">Digital Portfolio</a>
+			<a href="#attendance-cntnr" class="menu">Attendance</a>
+			<a href="#team-members-cntnr" class="menu">Our Team</a>
+			<a href="news.html" class="menu">News</a>
+		</nav>
+	</div>
+	<div class="container">
+		<img class="header" id="phd" src="picture.jpg">
+		<div class="center" id="first">WCI Web-Dev</div>
+		<div class="center" id="second">A club where you learn to develop real professional websites and web applications.</div>
+			<a href="#reasons">
+			<button type="button" class="bt1" id="more">Learn More</button>
+			</a>
+			<a href="#join-cntnr">
+			<button type="button" class="bt1" id="join">Join Us</button>
+			</a>
+	</div>
+	
+	<div class="container" id="abt" data-aos="fade-up">
+		<h1>About:</h1>
+		<p class="abtt">WCI Web-Dev is a web-development club where you will get to develop real projects for real people. This club welcomes students from all grades, backgrounds and interests. Everybody is encouraged to join the club and no coding experience is required. You will be taught everything about the design and programming of web-platforms and websites. This club will be a mini stimulation of the web-development and programming industry. We will all collaborate and work together on creating and developing cool web products.</p>
+	</div>
+	<!--EDIT! -->
+<div class="things">
+	<div class="containers" id="one" data-aos="fade-right">
+		<img class="icon" src="https://image.flaticon.com/icons/png/128/2303/2303952.png">
+		<h2>Experience</h2>
+		<p class="bxt">You will gain a lot of experience in web-development, including front-end, back-end, user interface and experience development.</p>
+	</div>
+	<div class="containers" id="two" data-aos="fade-right">
+		<img class="icon" src="https://image.flaticon.com/icons/png/128/2502/2502399.png">
+		<h2>New Skills</h2>
+		<p class="bxt">You will gain a lot of new valuable skills that you will be able to apply to develop your own websites and web platforms.</p>
+	</div>
+	<div class="containers" id="three" data-aos="fade-right">
+		<img class="icon" src="https://image.flaticon.com/icons/png/128/1096/1096028.png">
+		<h2>Work Portfolio</h2>
+		<p class="bxt">All the projects that will be developed in this club will be stored in a digital portfolio, which you will be able to access at anytime.</p>
+	</div>
+	<div class="containers" id="four" data-aos="fade-right">
+		<img class="icon" src="https://image.flaticon.com/icons/png/128/1239/1239608.png">
+		<h2>Rich Network</h2>
+		<p class="bxt">You will meet a lot of cool and talented people from the web-development industry, with whom you could stay in touch and potentially work together.</p>
+	</div>
+</div>
+<div class="container">
+	<h1>What Technical Knowledge and Skills You Will Learn: </h1>
+</div>
+<div class="things">
+	<div onclick = "visible()" class="containers" id="one" data-aos="fade-up">
+		<h2>HTML</h2>
+		<img class="lang" src="https://image.flaticon.com/icons/png/128/1051/1051277.png">
+	</div>
+
+
+	<div onclick = "visibleTwo()" class="containers" id="two" data-aos="fade-up">
+		<h2>CSS</h2>
+		<img class="lang" src="https://image.flaticon.com/icons/png/128/732/732190.png">
+	</div>
+
+	<div onclick = "visibleThree()" class="containers" id="three" data-aos="fade-up">
+		<h2>JavaScript</h2>
+		<img class="lang" src="https://image.flaticon.com/icons/png/128/919/919828.png">	
+	</div>
+
+	<div onclick = "visibleFour()" class="containers" id="four" data-aos="fade-up">
+		<h2>UX / UI</h2>
+		<img class="lang" src="https://image.flaticon.com/icons/png/128/781/781642.png">
+	</div>
+</div>
+
+<div class="container">
+	<h1>How Do I Know If This Club Is Right For Me?</h1>
+	<h2>This Club Is 100% For You If You Enjoy ...</h2>
+</div>
+<div class="container" id="reasons">
+	<div class="box" data-aos="fade-up">
+		<h2>Programming</h2>
+		<img class="lang2" src="https://image.flaticon.com/icons/png/128/2920/2920277.png">
+	</div>
+	<div class="box" data-aos="fade-up">
+		<h2>Art</h2>
+		<img class="lang2" src="https://image.flaticon.com/icons/png/128/2970/2970785.png">
+	</div>
+	<div class="box" data-aos="fade-up">
+		<h2>Creating</h2>
+		<img class="lang2" src="https://image.flaticon.com/icons/png/128/4149/4149695.png">
+	</div>
+	<div class="box" data-aos="fade-up">
+		<h2>Problem-Solving</h2>
+		<img class="lang2" src="https://image.flaticon.com/icons/png/128/3094/3094954.png">
+	</div>
+	<div class="box" data-aos="fade-up">
+		<h2>Learning</h2>
+		<img class="lang2" src="https://image.flaticon.com/icons/png/128/3534/3534033.png">
+	</div>
+</div>
+<div class= "container" id="reasons2">
+	<div class="box2" data-aos="fade-up">
+		<h2>Challenges</h2>
+		<img class="lang2" src="https://image.flaticon.com/icons/png/128/3310/3310111.png">
+	</div>
+	<div class="box2" data-aos="fade-up">
+		<h2>Projects</h2>
+		<img class="lang2" src="https://image.flaticon.com/icons/png/128/745/745205.png">
+	</div>
+	<div class="box2" data-aos="fade-up">
+		<h2>Thinking Big</h2>
+		<img class="lang2" src="https://image.flaticon.com/icons/png/128/4358/4358451.png">
+	</div>
+	<div class="box2" data-aos="fade-up">
+		<h2>Improving</h2>
+		<img class="lang2" src="https://image.flaticon.com/icons/png/128/4406/4406300.png">
+	</div>
+	<div class="box2" data-aos="fade-up">
+		<h2>Having Fun</h2>
+		<img class="lang2" src="https://static.thenounproject.com/png/955294-200.png">
+	</div>
+</div>
+   <div class="grid">
+        <div id="quiz">
+            <h1>Take a Quiz in Web-Development to Check Your Knowledge!</h1>
+            <hr style="margin-bottom: 20px">
+ 
+            <p id="question"></p>
+ 
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+            </div>
+ 
+            <hr style="margin-top: 50px">
+            <footer>
+                <p id="progress">Question x of y</p>
+            </footer>
+        </div>
+    </div>
+  <script>
+    function Quiz(questions) {
+    this.score = 0;
+    this.questions = questions;
+    this.questionIndex = 0;
+}
+ 
+Quiz.prototype.getQuestionIndex = function() {
+    return this.questions[this.questionIndex];
+}
+ 
+Quiz.prototype.guess = function(answer) {
+    if(this.getQuestionIndex().isCorrectAnswer(answer)) {
+        this.score++;
+    }
+ 
+    this.questionIndex++;
+}
+ 
+Quiz.prototype.isEnded = function() {
+    return this.questionIndex === this.questions.length;
+}
+ 
+ 
+function Question(text, choices, answer) {
+    this.text = text;
+    this.choices = choices;
+    this.answer = answer;
+}
+ 
+Question.prototype.isCorrectAnswer = function(choice) {
+    return this.answer === choice;
+}
+ 
+ 
+function populate() {
+    if(quiz.isEnded()) {
+        showScores();
+    }
+    else {
+        // show question
+        var element = document.getElementById("question");
+        element.innerHTML = quiz.getQuestionIndex().text;
+ 
+        // show options
+        var choices = quiz.getQuestionIndex().choices;
+        for(var i = 0; i < choices.length; i++) {
+            var element = document.getElementById("choice" + i);
+            element.innerHTML = choices[i];
+            guess("btn" + i, choices[i]);
+        }
+ 
+        showProgress();
+    }
+};
+ 
+function guess(id, guess) {
+    var button = document.getElementById(id);
+    button.onclick = function() {
+        quiz.guess(guess);
+        populate();
+    }
+};
+ 
+ 
+function showProgress() {
+    var currentQuestionNumber = quiz.questionIndex + 1;
+    var element = document.getElementById("progress");
+    element.innerHTML = "Question " + currentQuestionNumber + " of " + quiz.questions.length;
+};
+ 
+function showScores() {
+    var gameOverHTML = "<h1>Results:</h1>";
+    gameOverHTML += "<h2 id='score'>Congradulations! Your score: " + quiz.score + "</h2>" ;
+    /*var restart = document.createElement("input")
+    restart.type = "submit";
+    restart.value = "Restart";*/
+    var element = document.getElementById("quiz");
+    element.innerHTML = gameOverHTML;
+  
+  };
+// "<button id='btn'>Restart</button>"
+// create questions here
+var questions = [
+    new Question( "What language is used for back-end development?", ["JavaScript", "PHP","CSS", "HTML"], "PHP"),
+    new Question("What language is used to put content on the web page?", ["HTML", "Java", "Python", "XML"], "HTML"),
+    new Question("When was the World Wide Web invented?", ["1999", "2000","1989", "1963"], "1989"),
+    new Question("What language is used to style websites?", ["C++", "JavaScript", "XEML", "CSS"], "CSS"),
+    new Question("What percentage of websites is used on mobile devices?", ["2/3", "1/4", "3/4", "1/2"], "2/3")
+];
+ 
+// create quiz
+var quiz = new Quiz(questions);
+ 
+// display quiz
+populate();
+</script>
+<div class="container" id="join-cntnr" data-aos="fade-down">
+	<h2>Join WCI Web-Dev Today!</h2>
+	<iframe  src="https://docs.google.com/forms/d/e/1FAIpQLSdOg9EnA7pgr3QcU_QklSnfcdv14eUtjkP0ZVEUPUE3FeaG1Q/viewform?embedded=true" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading ...</iframe>
+	
+</div>
+
+<!--<script>
+		function makeApiCall(){
+			var params = {
+				spreadsheetId: 
+				ranges: [],
+				includeGridData: false,
+
+			};
+			var requests = gapi.client.sheeets.spreadsheets.get(params);
+			request.then(function(response) {
+				console.log(response.result);
+			}, function(reason) {
+				console.error('error:' + reason.result.error.message);
+			});
+		}
+		function initClient() {
+
+			gapi.client.init({
+				'apiKey': API_KEY,
+				'clientId': CLIENT_ID,
+				'scope': SCOPE,
+				'discoveryDocs': [''],
+			}).then(function() {
+				gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInStatus);
+				updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+			});
+		}
+
+		function handleClientLoad() {
+			gapi.load('client:auth2', initClient);
+		}
+		function updateSignInStatus(isSignedIn) {
+			if (isSignedIn) {
+				makeApiCall();
+			}
+		}
+		function handleSignInClick(event){
+			gapi.auth2.getAuthInstance().signIn();
+		}
+		function handleSignOutClick(event){
+			gapi.auth2.getAuthInstance().signOut();
+		}
+	</script>
+	<script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>-->
+
+<div class="container" id="team-members-cntnr"> 
+	<h1>Meet The Team!</h1>
+</div>
+<div class="things">
+
+<div class="members" id="n" data-aos="fade-up">
+	<img id="mariya" src="nuha2.jpg">
+	<h2>Nuha Akhand</h2>
+	<h3>Vice-President</h3>
+	<a href="https://www.instagram.com/n2005a_/">  
+	<span><h4 id="nn">n2005a_</h4></span>
+	</a>
+</div>
+
+<div class="members" id="m" data-aos="fade-up">
+	<img id="mariya" src="me.jpg">
+	<h2>Mariya Turetska</h2>
+	<h3>President and Founder</h3>
+	<a href="https://www.instagram.com/mariyaaa_turetska_/">
+	<h4 id="mm">mariyaaa_turetska_</h4>
+</a>
+</div>
+
+<div class="members" id="mtwo" data-aos="fade-up">
+	<img id="charis" src="charis.jpg">
+	<h2>Charis Ho</h2>
+	<h3>Vice-President</h3>
+	<a href="https://www.instagram.com/careese.15/">
+	<h4 id="cc">careese.15</h4>
+</a>
+</div>
+</div>
+<div class="container" id="attendance-cntnr" data-aos="fade-down">
+	<h2>Club Attendance</h2>
+	<h4>Note: Attendance is currently disabled because the club has not officialy started yet</h4>
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScg4sg-87_NemKHJ-T71H5orYqWIynHji9GZzZMmOSzommJgA/viewform?embedded=true" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	<!--<form id="attendance_form" class="container">
+		<label for="Name">Name: </label>
+		<input type="text" id="fname" class="text" name="Name" placeholder="Your Answer" required>
+		<br>
+		<label for="Emails">Email: </label>
+		<input type="email" id="email" class="text" name="Emails" placeholder="Your Answer" required>
+		<br>
+		<label for="Code">Attendance Code: </label>
+		<input type="text" id="code" class="text" name="Code" placeholder="Your Answer" required>
+	</form>-->
+	</div>
+	<a href="#phd">
+	<button type="button" id="btn5">Go Back Up</button>
+	</a>
+	</script>
+<div class="container" id="footer" data-aos="fade-up">
+	<h2 class="footer">WCI WEB-DEV</h2>
+<div id="first_box">
+<a href="index.html">
+	<button type="button" class="fmenu"><h4>Home</h4></button><br>
+</a>
+<a href="#abt">
+	<button type="button" class="fmenu"><h4>About</h4></button><br>
+</a>
+<a href="portfolio.html">
+	<button type="button" class="fmenu"><h4>Digital Portfolio</h4></button><br>
+</a>
+<a href="#mariya">
+	<button type="button" class="fmenu"><h4>Attendance</h4></button><br>
+</a>
+<a href="#team-members-cntnr">
+	<button type="button" class="fmenu"><h4>Our Team</h6></button><br>
+</a>
+<a href="news.html">
+	<button type="button" class="fmenu"><h4>News</h4></button><br>
+</a>
+</div>
+<div id="second_box">
+	<h6 class="sb">Copyright - 2021, Mariya Turetska</h6>
+<a href="terms.html">
+	<button type="button" class="dmenu"><h6>Terms of Use</h6></button><br>
+	<!--<h6 id="sb">Terms of Use</h6>-->
+</a>
+<a href="privacy.html">
+	<button type="button" class="dmenu"><h6>Privacy Policy</h6></button><br>
+	<!--<h6 id="sb">Privacy Policy</h6>-->
+</a>
+<a href="https://www.instagram.com/wci_web_dev/" id="sb">
+	<button type="button" class="dmenu"><h6>Instagram</h6></button><br>
+</a>
+<a href="https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=k2uhtee" id="sb">
+	<button type="button" class="dmenu"><h6>Google Classroom</h6></button><br>
+</a>
+	<h5 class="sb">If you have any questions, <a href="mailto:wci.webdev@gmail.com" id="email">contact us!</a></h5>
+</div>
+<img class="logo" src="logo.png">
+
+</div>
+</body>
+

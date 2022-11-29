@@ -47,6 +47,17 @@ html {
   border-radius: 4px;
   transition: all 0.4s;
 }
+img.download-icon {
+  width: 35%;
+  margin-left: 10%;
+  margin-bottom: 4%;
+}
+.file-box {
+  flex: 0 0 25%;
+}
+.file-box:hover{
+  cursor: pointer;
+}
 .back-to-top i {
   font-size: 28px;
   color: #151515;
@@ -304,6 +315,17 @@ input#search_bar {
   }
   #house-img {
     width: 100%;
+  }
+  .file-box {
+    flex: 0 0 50%;
+    padding: 6%;
+    text-align: center;
+  }
+  .file-box h4 {
+    font-size: small;
+  }
+  img.download-icon {
+    margin-left: 0%;
   }
 }
 /*--------------------------------------------------------------
